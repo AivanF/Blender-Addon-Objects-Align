@@ -12,12 +12,14 @@ The addon adds `View3D > Object > Align` submenu, there you can see these comman
 - Align between bounds – it will place selected objects...
 
   1) using specified order (based on source axis; it can be the same axis as target)
-  2) between the most distant (based on target axis) objects setting same distance between objects.
+  2) between the most distant (based on target axis) objects setting same distance between objects
+  3) depending on objects' centers or borders.
 
-- Align with padding – it will place selected objects...
+- Align with specific padding by cursor – it will place selected objects...
 
   1) using specified order (based on source axis; it can be the same axis as target)
-  2) with the same specified distance between objects starting from Cursor.
+  2) with the same specified distance between objects starting from Cursor
+  3) depending on objects' centers or borders.
 
 All the relocations affect the target axis only.
 
@@ -35,7 +37,9 @@ After that you will be able to use the Align submenu.
 
 ## ToDo list
 
-- Add ability to locate object using their max/min X/Y/Z, not only object origin.
+- Aligning with specific padding based on objects' borders works correctly
+only if objects' origin are geometry centers.
+It would be better to deal with any origin.
 
 - Something else?..
 
